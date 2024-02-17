@@ -166,7 +166,8 @@ int main()
 		printf("Escolha o que deseja fazer agora:\n\n");
 		printf("\t1-Incluir novos alunos\n");
 		printf("\t2-Consultar um aluno\n");
-		printf("\t3-Remover um aluno\n\n");
+		printf("\t3-Remover um aluno\n");
+		printf("\t4-Sair do sistema\n\n");
 		printf("Opção: "); //Final do menu
 	
 		scanf("%d", &opcao); //Armazeando as informações
@@ -186,6 +187,11 @@ int main()
 			
 			case 3:
 			deletar();			
+			break;
+			
+			case 4:
+			printf("Obrigada por utilizar o sistema!\n\n");
+			return 0;
 			break;
 			
 			default:
